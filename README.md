@@ -6,18 +6,17 @@ Note: Get the latest build for better experience.
     ﻿
     ﻿
 Changelog: 
-    ﻿
-Build 1 for both Windows and Linux - 21st April 2025
+﻿Build 1 for both Windows and Linux - 21st April 2025
 - Both executable files are released.
-    ﻿
+
 Build 2 for both Windows and Linux - 21st April 2025
 - Adjusted variable speed for all vehicles.
 - Extended the map.
 - Added props around the map.
-    ﻿
+
 Build 3 for both Windows and Linux - 21st April 2025
 - Added variable speed to missing vehicles
-    ﻿
+
 Build 4 for both Windows and Linux - 23rd April 2025
 - Changed resolution of the game to 1920x1080 providing much better field of view and showcasing the size of the city.
 - Added a sound whenever a vehicle hits the player.
