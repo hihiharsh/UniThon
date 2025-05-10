@@ -1,7 +1,7 @@
 Simple WASD or Arrow keys movement for the Player. They can also move diagonally. Dodge incoming traffic on highways and roads because who waits for the red light? Move swiftly through pavements and walkways through crowds and avoid falling into any manholes or ditches, meanwhile keeping a side eye on the clock.
 
 I will probably develop the game more and make it more detailed with diversity, along with making the code more efficient through learning about the Godot Engine more. The game is available for both Windows Operating System and Linux. I have made most of the assets in the game using Open Source Software, LibreSprite along with some assets made by my colleagues. Also have recorded most of the voice lines, which I'm sure you will have a chuckle at. The ambience music is taken from a YouTube Video.
-Changelog:
+  Changelog:
 Build 1 for both Windows and Linux - 21st April 2025
 - Both executable files are released.
 
