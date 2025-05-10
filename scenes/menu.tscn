@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn2csuf6638qx"]
+
+[ext_resource type="Script" uid="uid://difk5xheafdb0" path="res://scripts/menu.gd" id="1_vjb58"]
+[ext_resource type="Texture2D" uid="uid://dhgat0guf0chy" path="res://assets/menu_background/main_menu_background.png" id="2_vjb58"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yqeox"]
+blend_mode = 3
+
+[sub_resource type="LabelSettings" id="LabelSettings_vjb58"]
+font_size = 80
+
+[sub_resource type="LabelSettings" id="LabelSettings_con2f"]
+font_size = 32
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vjb58")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("CanvasItemMaterial_yqeox")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = -2.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_vjb58")
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -27.0
+offset_right = 107.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play
+"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = 64.0
+offset_right = 107.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -164.0
+offset_top = 89.0
+offset_right = 164.0
+offset_bottom = 199.0
+grow_horizontal = 2
+text = "UniThon"
+label_settings = SubResource("LabelSettings_vjb58")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -245.5
+offset_top = 173.0
+offset_right = 245.5
+offset_bottom = 283.0
+grow_horizontal = 2
+text = "A College Themed Arcade Game"
+label_settings = SubResource("LabelSettings_con2f")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

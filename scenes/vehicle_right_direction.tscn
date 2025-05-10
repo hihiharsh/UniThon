@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhw7tbpjehio0"]
+
+[ext_resource type="Script" uid="uid://ssv834kdjsly" path="res://scripts/vehicle_right_direction.gd" id="1_m6ges"]
+[ext_resource type="PackedScene" uid="uid://6j0tjhkmh6yq" path="res://scenes/killzone.tscn" id="2_63r6t"]
+[ext_resource type="Texture2D" uid="uid://bvittyubnmbkc" path="res://assets/vehicles/rickshawTest.png" id="3_7unld"]
+[ext_resource type="PackedScene" uid="uid://dtvbbhmsf4ivk" path="res://scenes/collision_detection.tscn" id="4_36kvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dncej"]
+size = Vector2(54, 24)
+
+[node name="RickshawRight" type="Node2D"]
+script = ExtResource("1_m6ges")
+
+[node name="Killzone" parent="." instance=ExtResource("2_63r6t")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-15, 6)
+shape = SubResource("RectangleShape2D_dncej")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("3_7unld")
+flip_h = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-36, -0.5)
+scale = Vector2(0.6, 0.95)
+rect = Rect2(-2000, -10, 20, 20)
+
+[node name="CollisionDetection" parent="." instance=ExtResource("4_36kvq")]
+position = Vector2(43, 2)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
