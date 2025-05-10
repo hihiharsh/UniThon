@@ -5,8 +5,8 @@ I will probably develop the game more and make it more detailed with diversity, 
 Note: Get the latest build for better experience.
     ﻿
     ﻿
-Changelog: 
-﻿Build 1 for both Windows and Linux - 21st April 2025
+Changelog:
+Build 1 for both Windows and Linux - 21st April 2025
 - Both executable files are released.
 
 Build 2 for both Windows and Linux - 21st April 2025
