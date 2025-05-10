@@ -3,6 +3,7 @@ Simple WASD or Arrow keys movement for the Player. They can also move diagonally
 I will probably develop the game more and make it more detailed with diversity, along with making the code more efficient through learning about the Godot Engine more. The game is available for both Windows Operating System and Linux. I have made most of the assets in the game using Open Source Software, LibreSprite along with some assets made by my colleagues. Also have recorded most of the voice lines, which I'm sure you will have a chuckle at. The ambience music is taken from a YouTube Video.
 
 Changelog:
+
 Build 1 for both Windows and Linux - 21st April 2025
 - Both executable files are released.
 
